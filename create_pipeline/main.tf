@@ -4,7 +4,7 @@ terraform {
   backend "s3" {
     bucket = "my-tf-state-bucket-emeka"
     key    = "terraform.tfstate"
-    region = "us-west-2"
+    region = "us-east-1"
   }
 }
 
