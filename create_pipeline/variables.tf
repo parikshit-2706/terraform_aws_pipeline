@@ -1,12 +1,12 @@
 
 variable "aws_region" {
   description = "AWS region to launch servers."
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 # Example of a list variable
 variable "availability_zones" {
-  default = ["us-west-2a", "us-west-2b"]
+  default = ["us-east-1a", "us-east-1b"]
 }
 
 variable "cidr_block" {
@@ -25,7 +25,7 @@ variable "python_project_repository_branch" {
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "emeka18-cicd-artifacts-bucket"
+  default     = "parikshit-cicd-artifacts-bucket"
 }
 
 variable "container_port" {
@@ -34,7 +34,7 @@ variable "container_port" {
 }
 
 variable "ACCOUNT_ID" {
-
+  default = 502325497403
 }
 
 variable "vpc_default_id" {
@@ -47,7 +47,7 @@ variable "container_name" {
 
 variable "ecs_image_ami" {
   type    = string
-  default = "ami-072aaf1b030a33b6e"
+  default = "ami-0507dff4275d8dd6d"
   # run the following command to get the image ami for your region
   # aws ssm get-parameters --names /aws/service/ecs/optimized-ami/amazon-linux-2/recommended
 }
